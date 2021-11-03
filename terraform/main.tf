@@ -94,5 +94,5 @@ resource "aws_instance" "diploma_instance"  {
   ami = data.aws_ami.ubuntu.id
   instance_type = "t3.micro"
   vpc_security_groups_ids = [aws_security_group.diploma_security_group.id]
-  key_name = “diploma_key"
+  key_name = "diploma_key"
 }
