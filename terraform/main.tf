@@ -1,6 +1,6 @@
 provider "aws" {
-    access_key = "AKIAWZGDI3LHCEUAXZXT"
-    secret_key = "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"
+    access_key = "AKIAWZGDI3LHCT2TY6MX"
+    secret_key = "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"
     region = "us-east-2"
 }
 
@@ -92,7 +92,7 @@ resource "aws_instance" "diploma_instance"  {
   count = 3
   subnet_id = module.vpc.public_subnets
   ami = data.aws_ami.ubuntu.id
-  instance_type = "t3.micro"
+  instance_type = "t3.small"
   vpc_security_groups_ids = [aws_security_group.diploma_security_group.id]
   key_name = "diploma_key"
 }
