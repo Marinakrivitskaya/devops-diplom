@@ -135,3 +135,6 @@
 <img width="1257" alt="Screenshot 2021-11-09 at 20 06 20" src="https://user-images.githubusercontent.com/67638098/140988403-287ce38c-ea88-4701-8de7-c15830305767.png">
 
 4. Создала кластер Kubernetes, при помощи Ansible. Конфигурация Ansible: [https://github.com/Marinakrivitskaya/devops-diplom/blob/main/ansible/inventory.ini](https://github.com/Marinakrivitskaya/devops-diplom/blob/main/ansible/inventory.ini)
+``` 
+ansible-playbook -i kubespray/inventory/mycluster/inventory.ini  kubespray/cluster.yml -u ubuntu --ask-pass -b --ask-become-pass 
+```
