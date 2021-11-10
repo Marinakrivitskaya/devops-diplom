@@ -123,6 +123,7 @@
 
 Выполнение работы.
 ===========
+## Создание облачной инфраструктуры
 1. Создала репозиторий с конфигурационными файлами Terraform: [https://github.com/Marinakrivitskaya/devops-diplom/tree/main/terraform](https://github.com/Marinakrivitskaya/devops-diplom/tree/main/terraform)
 
 2. Убедилась, что команды `terraform destroy` и `terraform apply` работают:
@@ -134,7 +135,13 @@
 <img width="1280" alt="Screenshot 2021-11-09 at 19 53 54" src="https://user-images.githubusercontent.com/67638098/140987926-ed84fb5d-3af8-47ff-be68-c875bdf73926.png">
 <img width="1257" alt="Screenshot 2021-11-09 at 20 06 20" src="https://user-images.githubusercontent.com/67638098/140988403-287ce38c-ea88-4701-8de7-c15830305767.png">
 
-4. Создала кластер Kubernetes, при помощи Ansible. Конфигурация Ansible: [https://github.com/Marinakrivitskaya/devops-diplom/blob/main/ansible/inventory.ini](https://github.com/Marinakrivitskaya/devops-diplom/blob/main/ansible/inventory.ini)
+### Создание Kubernetes кластера
+
+4. Создала кластер Kubernetes, при помощи Ansible. Inventory файл: [https://github.com/Marinakrivitskaya/devops-diplom/blob/main/ansible/inventory.ini](https://github.com/Marinakrivitskaya/devops-diplom/blob/main/ansible/inventory.ini)
+
 ``` 
+pip3 install -r requirements.txt
 ansible-playbook -i kubespray/inventory/mycluster/inventory.ini  kubespray/cluster.yml -u ubuntu --ask-pass -b --ask-become-pass 
 ```
+<img width="1280" alt="Screenshot 2021-11-10 at 22 14 20" src="https://user-images.githubusercontent.com/67638098/141194556-8a20f4a1-5386-4de3-85ac-0eadc3b4a9fd.png">
+
