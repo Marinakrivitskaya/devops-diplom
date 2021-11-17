@@ -77,7 +77,14 @@ resource "aws_security_group" "diploma_security_group" {
     to_port     = 30000
     cidr_blocks = ["0.0.0.0/0"]
   }
-
+      
+ ingress {
+    from_port = 8090
+    protocol = "tcp"
+    to_port = 8090
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+      
 ingress {
     protocol    = "tcp"
     from_port   = 30001
