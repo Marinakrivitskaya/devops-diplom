@@ -1,8 +1,16 @@
 terraform {
   required_providers {
-    aws = {
-      source = "hashicorp/aws"
-      version = "~> 3.28"
+    random = {
+      source  = "hashicorp/random"
+      version = ">= 0.12.0"
+    }
+  }
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "Marinakrivitskaya"
+
+    workspaces {
+      name = "stage"
     }
   }
 }
