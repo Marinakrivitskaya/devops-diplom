@@ -158,3 +158,15 @@ COPY nginx.conf /etc/nginx/nginx.conf
 <img width="1279" alt="gitlab" src="https://user-images.githubusercontent.com/67638098/143019856-b50fb8ec-08cb-4b8c-9e45-048a52ace356.png">
 
 <img width="1278" alt="port" src="https://user-images.githubusercontent.com/67638098/143019871-c30fe114-ba6d-4d2f-ac34-b26b94a5115f.png">
+
+### Создание Kubernetes кластера
+
+7.  Репозиторий с конфигурацией [Kubernetes](https://github.com/Marinakrivitskaya/kube-prometheus.git) кластера
+
+```
+git clone https://github.com/Marinakrivitskaya/kube-prometheus.git
+cd kube-prometheus
+kubectl create -f manifests/setup
+kubectl create -f manifests/
+kubectl apply -f manifests/app-deployment.yaml
+```
