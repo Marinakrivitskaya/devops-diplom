@@ -145,3 +145,16 @@ ansible-playbook -i kubespray/inventory/mycluster/inventory.ini  kubespray/clust
 ```
 <img width="1280" alt="Screenshot 2021-11-10 at 22 14 20" src="https://user-images.githubusercontent.com/67638098/141194556-8a20f4a1-5386-4de3-85ac-0eadc3b4a9fd.png">
 
+### Создание тестового приложения
+
+5. Подготовила тестовое приложение, на [Gitlab](https://gitlab.com/Marinakrivitskaya/diplom_project.git) 
+6. Dockerfile для создания образа приложения:
+
+```
+FROM nginx:latest
+COPY html /var/www/html
+COPY nginx.conf /etc/nginx/nginx.conf
+```
+<img width="1279" alt="gitlab" src="https://user-images.githubusercontent.com/67638098/143019856-b50fb8ec-08cb-4b8c-9e45-048a52ace356.png">
+
+<img width="1278" alt="port" src="https://user-images.githubusercontent.com/67638098/143019871-c30fe114-ba6d-4d2f-ac34-b26b94a5115f.png">
