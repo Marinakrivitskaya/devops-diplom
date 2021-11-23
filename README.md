@@ -167,6 +167,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 git clone https://github.com/Marinakrivitskaya/kube-prometheus.git
 cd kube-prometheus
 kubectl create -f manifests/setup
+until kubectl get servicemonitors --all-namespaces ; do date; sleep 1; echo ""; done
 kubectl create -f manifests/
-kubectl apply -f manifests/app-deployment.yaml
 ```
+<img width="887" alt="prometheus" src="https://user-images.githubusercontent.com/67638098/143025176-67baaefe-6be5-410d-9a1b-b9620fd4d5a9.png">
