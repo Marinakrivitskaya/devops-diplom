@@ -178,8 +178,11 @@ kubectl create -f manifests/
 <img width="887" alt="prometheus" src="https://user-images.githubusercontent.com/67638098/143025176-67baaefe-6be5-410d-9a1b-b9620fd4d5a9.png">
 
 Ссылка на веб интерфейс Grafana:
-```
 
+```
+URL: http://18.117.107.2:30000
+user: admin
+password: Netology
 ```
 
 ###  Что необходимо для сдачи задания?
@@ -197,5 +200,5 @@ kubectl create -f manifests/
 
 5. Репозиторий с конфигурацией [Kubernetes](https://github.com/Marinakrivitskaya/kube-prometheus.git) кластера.
 
-6. Ссылка на тестовое приложение и веб интерфейс Grafana с данными доступа.
+6. Ссылка на веб интерфейс [Grafana](http://18.117.107.2:30000) с данными доступа.
 
