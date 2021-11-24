@@ -159,6 +159,11 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 <img width="1278" alt="port" src="https://user-images.githubusercontent.com/67638098/143019871-c30fe114-ba6d-4d2f-ac34-b26b94a5115f.png">
 
+Ссылка на тестовое приложение
+```
+http://18.117.107.2:8090/
+```
+
 ### Создание Kubernetes кластера
 
 7.  Репозиторий с конфигурацией [Kubernetes](https://github.com/Marinakrivitskaya/kube-prometheus.git) кластера
@@ -171,3 +176,4 @@ until kubectl get servicemonitors --all-namespaces ; do date; sleep 1; echo ""; 
 kubectl create -f manifests/
 ```
 <img width="887" alt="prometheus" src="https://user-images.githubusercontent.com/67638098/143025176-67baaefe-6be5-410d-9a1b-b9620fd4d5a9.png">
+
