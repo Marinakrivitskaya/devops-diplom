@@ -185,10 +185,17 @@ kubectl create -f manifests/
 ###  Что необходимо для сдачи задания?
 
 1. Репозиторий с конфигурационными файлами [Terraform](https://github.com/Marinakrivitskaya/devops-diplom/tree/main/terraform)
+
 2. Пример pull request с комментариями созданными atlantis'ом или снимки экрана из Terraform Cloud.
+
 <img width="1280" alt="Screenshot 2021-11-09 at 19 53 54" src="https://user-images.githubusercontent.com/67638098/140987926-ed84fb5d-3af8-47ff-be68-c875bdf73926.png">
 <img width="1257" alt="Screenshot 2021-11-09 at 20 06 20" src="https://user-images.githubusercontent.com/67638098/140988403-287ce38c-ea88-4701-8de7-c15830305767.png">
+
 3. Репозиторий с конфигурацией [ansible](https://github.com/Marinakrivitskaya/devops-diplom/blob/main/ansible/inventory.ini), если был выбран способ создания Kubernetes кластера при помощи ansible.
-4. Репозиторий [тестовое приложение](https://gitlab.com/Marinakrivitskaya/diplom_project.git).
+
+4. Ссылка на [тестовое приложение](https://gitlab.com/Marinakrivitskaya/diplom_project.git).
+
 5. Репозиторий с конфигурацией [Kubernetes](https://github.com/Marinakrivitskaya/kube-prometheus.git) кластера.
+
 6. Ссылка на тестовое приложение и веб интерфейс Grafana с данными доступа.
+
