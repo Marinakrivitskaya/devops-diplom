@@ -157,11 +157,12 @@ COPY nginx.conf /etc/nginx/nginx.conf
 ```
 <img width="1279" alt="gitlab" src="https://user-images.githubusercontent.com/67638098/143019856-b50fb8ec-08cb-4b8c-9e45-048a52ace356.png">
 
-<img width="1278" alt="port" src="https://user-images.githubusercontent.com/67638098/143019871-c30fe114-ba6d-4d2f-ac34-b26b94a5115f.png">
+<img width="1255" alt="Screenshot 2021-11-29 at 13 22 53" src="https://user-images.githubusercontent.com/67638098/143869668-3fa16e56-e6c7-4400-81a2-28ea5039bfb1.png">
+
 
 Ссылка на тестовое приложение
 ```
-http://18.117.107.2:8090/
+http://3.144.88.123:8090/
 ```
 
 ### Создание Kubernetes кластера
@@ -180,10 +181,11 @@ kubectl create -f manifests/
 Ссылка на веб интерфейс Grafana:
 
 ```
-URL: http://18.117.107.2:30000
+URL: http://3.144.88.123:30000
 user: admin
-password: Netology
+password: admin
 ```
+<img width="1280" alt="Screenshot 2021-11-29 at 13 36 28" src="https://user-images.githubusercontent.com/67638098/143869430-24748b87-e5b2-44cb-884e-ba7577934c38.png">
 
 ###  Что необходимо для сдачи задания?
 
@@ -200,5 +202,5 @@ password: Netology
 
 5. Репозиторий с конфигурацией [Kubernetes](https://github.com/Marinakrivitskaya/kube-prometheus.git) кластера.
 
-6. Ссылка на веб интерфейс [Grafana](http://18.117.107.2:30000) с данными доступа.
+6. Ссылка на веб интерфейс [Grafana](http://3.144.88.123:30000) с данными доступа.
 
