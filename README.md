@@ -159,6 +159,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 <img width="1255" alt="Screenshot 2021-11-29 at 13 22 53" src="https://user-images.githubusercontent.com/67638098/143869668-3fa16e56-e6c7-4400-81a2-28ea5039bfb1.png">
 
+<img width="1280" alt="Screenshot 2021-11-29 at 13 53 46" src="https://user-images.githubusercontent.com/67638098/143871722-8abaa3ea-6049-43d0-9f26-30f48883f2b7.png">
 
 Ссылка на тестовое приложение
 ```
@@ -198,7 +199,7 @@ password: admin
 
 3. Репозиторий с конфигурацией [ansible](https://github.com/Marinakrivitskaya/devops-diplom/blob/main/ansible/inventory.ini), если был выбран способ создания Kubernetes кластера при помощи ansible.
 
-4. Ссылка на [тестовое приложение](https://gitlab.com/Marinakrivitskaya/diplom_project.git).
+4. Ссылка на [тестовое приложение](https://gitlab.com/Marinakrivitskaya/diplom_project.git) и ссылка на [Docker образ](https://hub.docker.com/repository/docker/marinakrivitskaya/hellorunner)
 
 5. Репозиторий с конфигурацией [Kubernetes](https://github.com/Marinakrivitskaya/kube-prometheus.git) кластера.
 
