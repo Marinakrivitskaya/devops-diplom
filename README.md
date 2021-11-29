@@ -129,8 +129,6 @@
 2. Убедилась, что команды `terraform destroy` и `terraform apply` работают:
 <img width="949" alt="terraform destroy" src="https://user-images.githubusercontent.com/67638098/140987659-1f58e350-23ad-43a1-a79f-2c8f5763ceb6.png">
 
-<img width="956" alt="terraform apply" src="https://user-images.githubusercontent.com/67638098/140987687-e146980b-4b5d-4171-86fa-b7c1bc22674a.png">
-
 3. Изменения проходят успешно , используя web-интерфейс Terraform cloud:
 <img width="1280" alt="Screenshot 2021-11-09 at 19 53 54" src="https://user-images.githubusercontent.com/67638098/140987926-ed84fb5d-3af8-47ff-be68-c875bdf73926.png">
 <img width="1257" alt="Screenshot 2021-11-09 at 20 06 20" src="https://user-images.githubusercontent.com/67638098/140988403-287ce38c-ea88-4701-8de7-c15830305767.png">
